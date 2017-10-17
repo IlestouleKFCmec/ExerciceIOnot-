@@ -21,7 +21,7 @@ public class Main {
             urlConnect.connect();
             theInput = urlConnect.getInputStream();
             String convertUrlToString = String.valueOf(theURL);
-            //System.out.println("entrez l'extension voulue pour le fichier de destination");    //l'extension choisie par l'utilisateur
+           
             extension = extractExtension(convertUrlToString);
 
             theOutput = new FileOutputStream(new File("destination."+extension));  //crée le fichier de destination en ajoutant l'extension choisie.
